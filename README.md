@@ -18,9 +18,9 @@ As an evaluator, you can run this fully deployed project with a single command w
    git clone https://github.com/CaptainLevi11/college-attendance-system.git
    cd college-attendance-system
    ```
-3. Run this single command to start the entire system:
+3. Run this single command to build and start the entire system:
    ```bash
-   docker-compose up -d
+   docker-compose up --build -d
    ```
 
 ### Accessing the Application
@@ -36,22 +36,3 @@ To stop the application, simply run:
 ```bash
 docker-compose down
 ```
-
----
-
-## 🛠 For Developers: Building & Publishing (Student Instructions)
-
-If you are modifying the code and want to upload the latest changes to Docker Hub:
-
-1. **Log in to Docker:**
-   ```bash
-   docker login
-   ```
-2. **Build and Tag the Images:**
-   ```bash
-   docker-compose build
-   ```
-3. **Push to Docker Hub:**
-   ```bash
-   docker-compose push
-   ```
