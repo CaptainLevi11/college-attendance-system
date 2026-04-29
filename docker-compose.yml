@@ -1,5 +1,6 @@
 services:
   frontend:
+    image: princpgaikwad/college-attendance-frontend:latest
     build:
       context: .
       dockerfile: Dockerfile.frontend
@@ -12,6 +13,7 @@ services:
     restart: unless-stopped
 
   backend:
+    image: princpgaikwad/college-attendance-backend:latest
     build:
       context: .
       dockerfile: Dockerfile.backend
